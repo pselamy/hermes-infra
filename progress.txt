@@ -83,3 +83,14 @@ Someone with admin access to the axel-claw org needs to either:
 - .env: DOMAIN=example.com, ACME_EMAIL=admin@example.com, LOG_LEVEL=INFO, DASHBOARD_USER=admin, DASHBOARD_PASSWORD=changeme
 - All output reported to user
 - US-001: PASSES
+
+## Iteration 12 (2026-04-12)
+- Task: Fix Reeve server deployment — git pull, extract API key, rewrite .env, restart via docker compose
+- Step 1: Fixed git remote from axel-claw to pselamy/hermes-infra, git pull origin main — SUCCESS (pulled prd.json, progress.txt)
+- Step 2: Extracted OPENROUTER_API_KEY from running reeve container via docker inspect
+- Step 3: Rewrote /opt/hermes-infra/.env with OPENROUTER_API_KEY and HERMES_CONFIG_PATH=/etc/hermes/hermes.yaml
+- Step 4: docker stop reeve — container was already gone (old one removed), docker compose handled recreation
+- Step 5: docker compose up -d — reeve-agent container recreated and started (container 6b001121a7be)
+- Step 6: Verified — docker ps shows reeve-agent running, logs show Hermes Agent starting with 28 tools, 74 skills
+- Note: Container name is "reeve-agent" not "hermes-infra-reeve-agent-1"
+- US-001: PASSES — ALL STEPS COMPLETE

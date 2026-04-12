@@ -52,3 +52,16 @@ Someone with admin access to the axel-claw org needs to either:
   - Health check: curl localhost:8080/api/overview returns HTTP 200 with full JSON
 - Files changed: docker-compose.yml, .env.example, render-config.sh, .gitignore
 - US-001: PASSES
+
+## Iteration 8 (2026-04-12)
+- Task: Replace Traefik with reeve-agent container
+- Stopped and removed Traefik container (hermes-infra-hermes-1)
+- Pulled nousresearch/hermes-agent:latest successfully
+- Started reeve-agent: docker run -d --name reeve-agent --restart unless-stopped -p 127.0.0.1:8080:8080 -v reeve-memory:/data nousresearch/hermes-agent:latest
+- Container running: 6a81e7487f35, status UP, bound to 127.0.0.1:8080->8080/tcp
+- US-001: PASSES
+
+## Iteration 9 (2026-04-12)
+- Task: SSH and run docker ps --format table, report output
+- Output: 1 container (reeve-agent, 6a81e7487f35) running nousresearch/hermes-agent:latest, in restart loop (exit 0)
+- US-001: PASSES

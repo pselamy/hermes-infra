@@ -129,3 +129,13 @@ Someone with admin access to the axel-claw org needs to either:
 - Deleted stale branches: ralph/task-20260412-024927, ralph/task-20260412-040101
 - Final state: PR #1 MERGED, PR #2 CLOSED, PR #3 CLOSED, PR #4 MERGED
 - US-001: PASSES
+
+## Iteration 16 (2026-04-12)
+- Task: Cleanup stale dispatch worktrees — list all and remove merged or >48h old
+- Found 3 stale worktrees across repositories:
+  1. beaconfi/.claude/worktrees/scaffold-monorepo (branch ralph/task-20260410-031211) — PR #1 MERGED, 2 days old → REMOVED, branch deleted
+  2. pselamy.github.io/.claude/worktrees/reading-code (branch post/reading-code-you-didnt-write) — PR #6 OPEN, 4 days old → REMOVED (branch+PR preserved on remote)
+  3. pselamy.github.io/.claude/worktrees/specs-post (branch ralph/task-20260406-013734) — PR #5 OPEN, 6 days old → REMOVED (branch+PR preserved on remote)
+- All 3 worktrees removed successfully
+- Verified: both repos now show only main worktree
+- US-001: PASSES

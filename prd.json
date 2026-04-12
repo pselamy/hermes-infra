@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260412-150051",
-  "description": "cleanup: list open PRs and their status",
+  "branchName": "ralph/task-20260412-202140",
+  "description": "cleanup: list all stale dispatch worktrees and remove any that are merged or older than 48h",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "cleanup: list open PRs and their status",
+      "description": "cleanup: list all stale dispatch worktrees and remove any that are merged or older than 48h",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

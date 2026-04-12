@@ -94,3 +94,11 @@ Someone with admin access to the axel-claw org needs to either:
 - Step 6: Verified — docker ps shows reeve-agent running, logs show Hermes Agent starting with 28 tools, 74 skills
 - Note: Container name is "reeve-agent" not "hermes-infra-reeve-agent-1"
 - US-001: PASSES — ALL STEPS COMPLETE
+
+## Iteration 13 (2026-04-12)
+- Task: Stop and remove duplicate "reeve" container, verify compose-managed container, show logs
+- docker stop reeve && docker rm reeve — SUCCESS
+- docker ps: only reeve-agent (8d5e2bebef07) running, nousresearch/hermes-agent:latest, health: starting, 127.0.0.1:8080->8080/tcp
+- Container name is "reeve-agent" not "hermes-infra-reeve-agent-1"
+- docker logs reeve-agent --tail 20: Hermes Gateway started, 78 bundled items, warnings about no allowlists and no messaging platforms
+- US-001: PASSES

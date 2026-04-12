@@ -1,18 +1,18 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260412-031000",
-  "description": "Fix the Reeve server deployment. SSH into root@87.99.158.18 using key ~/.ssh/id_ed25519. Do the following steps in order: 1) cd /opt/hermes-infra && git pull origin main 2) Extract OPENROUTER_API_KEY ",
+  "branchName": "ralph/task-20260412-031435",
+  "description": "SSH into root@87.99.158.18 with key ~/.ssh/id_ed25519. Stop and remove the duplicate container named reeve that was started manually: docker stop reeve && docker rm reeve. Then verify only the compose",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "Fix the Reeve server deployment. SSH into root@87.99.158.18 using key ~/.ssh/id_ed25519. Do the following steps in order: 1) cd /opt/hermes-infra && git pull origin main 2) Extract OPENROUTER_API_KEY from the running reeve container: docker inspect reeve --format={{.Config.Env}} and find the OPENROUTER_API_KEY value 3) Rewrite /opt/hermes-infra/.env with: OPENROUTER_API_KEY=<the extracted value> and HERMES_CONFIG_PATH=/etc/hermes/hermes.yaml 4) docker stop reeve && docker rm reeve 5) cd /opt/hermes-infra && docker compose up -d 6) Verify: docker ps && docker logs hermes-infra-reeve-agent-1 --tail 20",
+      "description": "SSH into root@87.99.158.18 with key ~/.ssh/id_ed25519. Stop and remove the duplicate container named reeve that was started manually: docker stop reeve && docker rm reeve. Then verify only the compose-managed container is running: docker ps. Show the logs: docker logs hermes-infra-reeve-agent-1 --tail 20",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],
       "priority": 1,
       "passes": true,
-      "notes": "All 6 deployment steps completed. Container reeve-agent running with correct env vars."
+      "notes": ""
     }
   ]
 }

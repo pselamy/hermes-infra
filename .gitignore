@@ -1,0 +1,5 @@
+.env
+config/
+*.log
+prd.json
+progress.txt

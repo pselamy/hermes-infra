@@ -139,3 +139,14 @@ Someone with admin access to the axel-claw org needs to either:
 - All 3 worktrees removed successfully
 - Verified: both repos now show only main worktree
 - US-001: PASSES
+
+## Iteration 17 (2026-04-12)
+- Task: Cleanup stale dispatch — full sweep across all repos and ralph-state
+- Closed 10 stale infrastructure PRs (#11, #23-26, #28, #30, #48-50) from March 28-30
+- Deleted 40 stale remote branches from infrastructure repo (ralph/task-2026032*, 20260330*)
+- Deleted 42 stale local branches from infrastructure repo
+- Deleted 2 stale remote branches from hermes-infra (ralph/task-20260412-024927, 040101)
+- Removed 28 completed/stopped dispatch file sets from ~/ralph-state (kept only current running dispatch)
+- Truncated ~/ralph-state/completed.log
+- Verified: no stale worktrees remain across any repo
+- US-001: PASSES

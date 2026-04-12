@@ -1,0 +1,18 @@
+{
+  "project": "hermes-infra",
+  "branchName": "ralph/task-20260412-024927",
+  "description": "The server 87.99.158.18 is running Traefik by mistake. SSH in as root and fix it: stop and remove all containers, then run: docker run -d --name reeve-agent --restart unless-stopped -p 127.0.0.1:8080:",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Complete task",
+      "description": "The server 87.99.158.18 is running Traefik by mistake. SSH in as root and fix it: stop and remove all containers, then run: docker run -d --name reeve-agent --restart unless-stopped -p 127.0.0.1:8080:8080 -v reeve-memory:/data nousresearch/hermes-agent:latest. Check if the image exists first with docker pull. Report what is running.",
+      "acceptanceCriteria": [
+        "All work described in the prompt is complete"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": "Traefik stopped and removed. reeve-agent running on 127.0.0.1:8080."
+    }
+  ]
+}

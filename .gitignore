@@ -1,5 +1,6 @@
 .env
-config/
+config/*.yaml
+!config/*.yaml.tpl
 *.log
 prd.json
 progress.txt

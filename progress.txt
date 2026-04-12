@@ -65,3 +65,13 @@ Someone with admin access to the axel-claw org needs to either:
 - Task: SSH and run docker ps --format table, report output
 - Output: 1 container (reeve-agent, 6a81e7487f35) running nousresearch/hermes-agent:latest, in restart loop (exit 0)
 - US-001: PASSES
+
+## Iteration 10 (2026-04-12)
+- Task: Set git remote to axel-claw/hermes-infra and copy .env.example to .env
+- SSH to root@87.99.158.18: cd /opt/hermes-infra
+- git remote set-url origin https://github.com/axel-claw/hermes-infra.git — SUCCESS
+- git remote -v output:
+  origin	https://github.com/axel-claw/hermes-infra.git (fetch)
+  origin	https://github.com/axel-claw/hermes-infra.git (push)
+- cp .env.example .env — SUCCESS (placeholder values: DOMAIN=example.com, etc.)
+- US-001: PASSES

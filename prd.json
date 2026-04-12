@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260412-025302",
-  "description": "SSH into 87.99.158.18 as root and run: docker ps --format table. Report the output.",
+  "branchName": "ralph/task-20260412-025625",
+  "description": "On server 87.99.158.18, SSH in as root and run: cd /opt/hermes-infra && git remote set-url origin https://github.com/axel-claw/hermes-infra.git && git remote -v. Also copy the .env.example to .env wit",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "SSH into 87.99.158.18 as root and run: docker ps --format table. Report the output.",
+      "description": "On server 87.99.158.18, SSH in as root and run: cd /opt/hermes-infra && git remote set-url origin https://github.com/axel-claw/hermes-infra.git && git remote -v. Also copy the .env.example to .env with placeholder values. Report the git remote output.",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

@@ -75,3 +75,11 @@ Someone with admin access to the axel-claw org needs to either:
   origin	https://github.com/axel-claw/hermes-infra.git (push)
 - cp .env.example .env — SUCCESS (placeholder values: DOMAIN=example.com, etc.)
 - US-001: PASSES
+
+## Iteration 11 (2026-04-12)
+- Task: SSH and run docker ps, cat docker-compose.yml, cat .env — report all output
+- docker ps: 1 container running — reeve (22aa32c0600d) using nousresearch/hermes-agent:latest, Up 8 minutes, no ports exposed
+- docker-compose.yml: still references traefik:v3.3 (compose not used for current container)
+- .env: DOMAIN=example.com, ACME_EMAIL=admin@example.com, LOG_LEVEL=INFO, DASHBOARD_USER=admin, DASHBOARD_PASSWORD=changeme
+- All output reported to user
+- US-001: PASSES

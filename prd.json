@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260412-031435",
-  "description": "SSH into root@87.99.158.18 with key ~/.ssh/id_ed25519. Stop and remove the duplicate container named reeve that was started manually: docker stop reeve && docker rm reeve. Then verify only the compose",
+  "branchName": "ralph/task-20260412-150051",
+  "description": "cleanup: list open PRs and their status",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "SSH into root@87.99.158.18 with key ~/.ssh/id_ed25519. Stop and remove the duplicate container named reeve that was started manually: docker stop reeve && docker rm reeve. Then verify only the compose-managed container is running: docker ps. Show the logs: docker logs hermes-infra-reeve-agent-1 --tail 20",
+      "description": "cleanup: list open PRs and their status",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

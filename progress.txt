@@ -102,3 +102,30 @@ Someone with admin access to the axel-claw org needs to either:
 - Container name is "reeve-agent" not "hermes-infra-reeve-agent-1"
 - docker logs reeve-agent --tail 20: Hermes Gateway started, 78 bundled items, warnings about no allowlists and no messaging platforms
 - US-001: PASSES
+
+## Iteration 14 (2026-04-12)
+- Task: Sync local repo with actual deployed state on server
+- SSHed to root@87.99.158.18, retrieved: docker-compose.yml, .env, hermes-data/.env, hermes-data listing, SOUL.md, config templates
+- Server runs: nousresearch/hermes-agent:latest as "reeve-agent" with gateway run command
+- Config templates: hermes.yaml.tpl, model.yaml.tpl, telegram.yaml.tpl (envsubst-based)
+- SOUL.md: Reeve is a career steward for Patrick Selamy
+- Changes made in worktree (branch ralph/task-20260412-040101):
+  - Replaced Traefik docker-compose.yml with actual reeve-agent config
+  - Created .env.template with placeholder values (no real keys)
+  - Added config/*.yaml.tpl templates
+  - Updated render-config.sh to render templates via envsubst
+  - Updated .gitignore to track .tpl files but ignore rendered .yaml
+  - Removed old .env.example
+- PR #4 created: https://github.com/pselamy/hermes-infra/pull/4
+- Auto-merge enabled
+- US-001: PASSES
+
+## Iteration 15 (2026-04-12)
+- Task: Cleanup — list open PRs and their status
+- Found 4 PRs total: #1 MERGED, #2 OPEN (stale), #3 OPEN (stale), #4 MERGED
+- Closed PR #2 (Replace Traefik with reeve-agent container) — superseded by PR #4
+- Closed PR #3 (ralph: Report docker ps output from server) — superseded by PR #4
+- Removed worktrees: reeve-agent, sync-deployed-state
+- Deleted stale branches: ralph/task-20260412-024927, ralph/task-20260412-040101
+- Final state: PR #1 MERGED, PR #2 CLOSED, PR #3 CLOSED, PR #4 MERGED
+- US-001: PASSES

@@ -150,3 +150,12 @@ Someone with admin access to the axel-claw org needs to either:
 - Truncated ~/ralph-state/completed.log
 - Verified: no stale worktrees remain across any repo
 - US-001: PASSES
+
+## Iteration 18 (2026-04-12)
+- Task: Cleanup stale dispatch — remove stopped dispatch files from ~/ralph-state
+- Removed 2 stale dispatches:
+  1. 20260412-204206-41ebab13 (status: done) — 5 files removed
+  2. 20260412-210106-2fcb10a1 (status: stopped) — 4 files removed
+- Only current running dispatch (20260412-214104-25b6095d) remains in ~/ralph-state
+- Rebased branch on origin/main to resolve PR #5 merge conflicts
+- US-001: PASSES

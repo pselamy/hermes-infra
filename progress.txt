@@ -1,3 +1,13 @@
+## Iteration 21 (2026-04-13)
+- Task: Cleanup stale marker
+- Removed 1 stale dispatch from ~/ralph-state: 20260413-114221-61440ac3 (done)
+- Deleted stale local branch: ralph/task-20260413-072030
+- Deleted 2 stale remote branches: ralph/task-20260412-023736, ralph/task-20260413-072030
+- Verified: no stale worktrees across any repo
+- Only current dispatch remains in ~/ralph-state
+- hermes-infra branches: only main + remotes/origin/main
+- US-001: PASSES
+
 ## Iteration 1 (2026-04-12)
 - SSH to root@87.99.158.18: WORKS (Ubuntu 24.04, hostname: reeve)
 - Git: already installed

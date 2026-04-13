@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260413-042205",
-  "description": "clean up and report status",
+  "branchName": "ralph/task-20260413-150426",
+  "description": "cleanup stale marker",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "clean up and report status",
+      "description": "cleanup stale marker",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

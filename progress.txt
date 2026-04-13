@@ -174,3 +174,12 @@ Someone with admin access to the axel-claw org needs to either:
 - infrastructure: no open PRs
 - beaconfi: no open PRs
 - US-001: PASSES
+
+## Iteration 20 (2026-04-13)
+- Task: Check status of open PRs and summarize PRs #5, #6, #7
+- PR #5 (merged): Cleanup stale PRs and worktrees — closed PRs #2/#3, removed orphaned worktrees/branches
+- PR #6 (merged): Show result summary — marked US-001 passing in prd.json, added project state summary
+- PR #7 (open): Summarize PR #6 changes — redundant metadata-only prd.json update, superseded by PR #6
+- 1 open PR total: PR #7 (ralph/task-20260413-094423)
+- Also noted: stale worktree at .claude/worktrees/task-summary for PR #7's branch
+- US-001: PASSES

@@ -1,18 +1,18 @@
 {
-  "stories": [
+  "project": "hermes-infra",
+  "branchName": "ralph/task-20260413-042205",
+  "description": "clean up and report status",
+  "userStories": [
     {
       "id": "US-001",
-      "title": "Bootstrap server 87.99.158.18 with hermes-infra",
-      "acceptance_criteria": [
-        "SSH as root to 87.99.158.18",
-        "Docker and git installed",
-        "Clone https://github.com/axel-claw/hermes-infra to /opt/hermes-infra",
-        "Create .env with placeholder values",
-        "Run render-config.sh then docker compose up -d",
-        "Health check passes on localhost:8080"
+      "title": "Complete task",
+      "description": "clean up and report status",
+      "acceptanceCriteria": [
+        "All work described in the prompt is complete"
       ],
+      "priority": 1,
       "passes": true,
-      "notes": "Repo created at pselamy/hermes-infra (axel-claw org lacks permissions). All steps completed successfully."
+      "notes": ""
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260412-214106",
-  "description": "cleanup: remove stopped stale dispatch",
+  "branchName": "ralph/task-20260413-042205",
+  "description": "clean up and report status",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "cleanup: remove stopped stale dispatch",
+      "description": "clean up and report status",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

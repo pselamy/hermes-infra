@@ -1,3 +1,11 @@
+## Iteration 32 (2026-04-14)
+- Task: Show titles and state of PRs #23, #24, #25
+- Results:
+  - PR #23: "ralph: [US-001] Clean up stopped dispatch fef72cf0" — OPEN
+  - PR #24: "ralph: [US-001] Confirm dispatch cf2fee4b resolved" — CLOSED
+  - PR #25: "ralph: [US-001] Mark stale dispatch cf2fee4b as resolved" — OPEN
+- US-001: PASSES
+
 ## Iteration 23 (2026-04-14)
 - Task: Show status of task 20260414-070056-68e6a06d
 - Result: Task completed successfully — status=done, 1/1 iterations, 1/1 stories passed

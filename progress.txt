@@ -1,3 +1,12 @@
+## Iteration 24 (2026-04-14)
+- Task: Cleanup stale tasks
+- Removed 5 stale dispatches from ~/ralph-state (070056, 072056, 074253, 082109, 100111) + completed.log — 22 files total
+- Deleted 1 stale local branch (ralph/task-20260414-100113)
+- Deleted 4 stale remote branches (052042, 064114, 070058, 100113)
+- No stale worktrees across any repo
+- No stale PRs (hermes-infra: none, pselamy.github.io: #5/#6 active, infrastructure: none, beaconfi: none)
+- US-001: PASSES
+
 ## Iteration 23 (2026-04-14)
 - Task: Show status of task 20260414-070056-68e6a06d
 - Result: Task completed successfully — status=done, 1/1 iterations, 1/1 stories passed

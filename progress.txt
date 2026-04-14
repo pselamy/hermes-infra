@@ -1,3 +1,8 @@
+## Iteration 25 (2026-04-14)
+- Task: What was the task for PR #14? Brief summary.
+- Result: PR #14 was "ralph: [US-001] Cleanup stale tasks" — removed 5 stale dispatches, 1 stale local branch, 4 stale remote branches. Already merged.
+- US-001: PASSES
+
 ## Iteration 23 (2026-04-14)
 - Task: Show status of task 20260414-070056-68e6a06d
 - Result: Task completed successfully — status=done, 1/1 iterations, 1/1 stories passed

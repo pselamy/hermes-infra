@@ -1,18 +1,18 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260414-100113",
-  "description": "show status of task 20260414-070056-68e6a06d",
+  "branchName": "ralph/task-20260414-164059",
+  "description": "cleanup stale dispatch entries 20260401-130658-cf2fee4b and 20260414-124041-c4377e7e - remove completed and stopped task records",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "show status of task 20260414-070056-68e6a06d",
+      "description": "cleanup stale dispatch entries 20260401-130658-cf2fee4b and 20260414-124041-c4377e7e - remove completed and stopped task records",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],
       "priority": 1,
       "passes": true,
-      "notes": "Task 20260414-070056-68e6a06d completed: status=done, 1/1 iterations, 1/1 stories passed, PR #12 merged, finished 2026-04-14T07:02:52Z"
+      "notes": "20260401-130658-cf2fee4b: already cleaned in prior iterations (no files remain). 20260414-124041-c4377e7e: removed 4 files (log, prompt, run.sh, status) — task was stopped (5/5 iterations, 0/1 stories passed). No related branches, worktrees, or PRs remain for either dispatch."
     }
   ]
 }

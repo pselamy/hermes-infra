@@ -1,18 +1,18 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260414-100113",
-  "description": "show status of task 20260414-070056-68e6a06d",
+  "branchName": "ralph/task-20260414-140054",
+  "description": "clean up stale dispatch 20260401-130658-cf2fee4b by removing its state",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "show status of task 20260414-070056-68e6a06d",
+      "description": "clean up stale dispatch 20260401-130658-cf2fee4b by removing its state",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],
       "priority": 1,
       "passes": true,
-      "notes": "Task 20260414-070056-68e6a06d completed: status=done, 1/1 iterations, 1/1 stories passed, PR #12 merged, finished 2026-04-14T07:02:52Z"
+      "notes": ""
     }
   ]
 }

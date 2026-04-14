@@ -1,18 +1,18 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260413-072030",
-  "description": "show result summary",
+  "branchName": "ralph/task-20260414-052042",
+  "description": "check status",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "show result summary",
+      "description": "check status",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],
       "priority": 1,
       "passes": true,
-      "notes": "Summary displayed to user"
+      "notes": ""
     }
   ]
 }

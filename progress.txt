@@ -1,3 +1,31 @@
+## Iteration 21 (2026-04-14)
+- Task: Status check and cleanup
+- Server: reeve-agent running (nousresearch/hermes-agent:latest), Up 2 hours, 127.0.0.1:8080->8080/tcp
+- Closed PR #9 (merge conflicts, stale cleanup PR)
+- Removed worktree cleanup-stale and deleted branch ralph/task-20260413-150426
+- Removed 1 stale dispatch (20260413-150424-f78ffb47) from ~/ralph-state
+- Open PRs across repos:
+  - hermes-infra: none
+  - pselamy.github.io: #5 (specs post), #6 (reading-code post)
+  - infrastructure: none
+  - beaconfi: none
+- No stale worktrees remain
+- US-001: PASSES
+
+## Iteration 20 (2026-04-13)
+- Task: Status report and cleanup
+- Server: reeve-agent running (nousresearch/hermes-agent:latest), Up 18 hours, 127.0.0.1:8080->8080/tcp
+- Closed stale PRs #7 and #8 (conflicting, superseded)
+- Removed 2 stale worktrees (pr-summary, task-summary) and deleted their branches
+- Cleaned 7 completed/stopped dispatches from ~/ralph-state
+- Open PRs across repos:
+  - hermes-infra: none
+  - pselamy.github.io: #5 (specs post), #6 (reading-code post)
+  - infrastructure: none
+  - beaconfi: none
+- No stale worktrees remain
+- US-001: PASSES
+
 ## Iteration 1 (2026-04-12)
 - SSH to root@87.99.158.18: WORKS (Ubuntu 24.04, hostname: reeve)
 - Git: already installed

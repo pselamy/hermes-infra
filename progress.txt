@@ -1,3 +1,23 @@
+## Iteration 26 (2026-04-15)
+- Task: Status check
+- Docker: not available (server not running)
+- Closed PR #31 (merge conflicts, stale mark-complete PR)
+- Removed 2 stale worktrees (echo-cleanup, mark-complete) and their branches
+- Removed 2 completed dispatches from ~/ralph-state (104111, 110135)
+- Open PRs:
+  - hermes-infra: none
+  - pselamy.github.io: #5 (specs post), #6 (reading-code post)
+  - infrastructure: none
+  - beaconfi: none
+- No stale worktrees remain
+- US-001: PASSES
+
+## Iteration 25 (2026-04-15)
+- Task: mark-complete --task 20260401-130658-cf2fee4b
+- Task 20260401-130658-cf2fee4b had no state files (previously cleaned up)
+- Added entry to ~/ralph-state/completed.log marking it done
+- US-001: PASSES
+
 ## Iteration 24 (2026-04-14)
 - Task: Cleanup stale tasks
 - Removed 5 stale dispatches from ~/ralph-state (070056, 072056, 074253, 082109, 100111) + completed.log — 22 files total

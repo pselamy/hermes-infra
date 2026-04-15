@@ -1,18 +1,18 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260414-102052",
-  "description": "cleanup stale tasks",
+  "branchName": "ralph/task-20260415-100042",
+  "description": "cleanup: mark stale task 20260401-130658-cf2fee4b as cancelled",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "cleanup stale tasks",
+      "description": "cleanup: mark stale task 20260401-130658-cf2fee4b as cancelled",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],
       "priority": 1,
       "passes": true,
-      "notes": ""
+      "notes": "Task 20260401-130658-cf2fee4b confirmed cancelled. No ralph-state files, branches, worktrees, or PRs remain. Previously cleaned in iterations 25-34."
     }
   ]
 }

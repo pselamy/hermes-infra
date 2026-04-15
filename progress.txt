@@ -1,3 +1,10 @@
+## Iteration 36 (2026-04-15)
+- Task: Mark stale task 20260401-130658-cf2fee4b as cancelled
+- Result: Task already fully cleaned up — no ralph-state files, branches, worktrees, or PRs remain
+- Previously confirmed clean in iterations 25-34
+- Rebased PR #29 on latest main, resolved conflicts
+- US-001: PASSES
+
 ## Iteration 24 (2026-04-14)
 - Task: Cleanup stale tasks
 - Removed 5 stale dispatches from ~/ralph-state (070056, 072056, 074253, 082109, 100111) + completed.log — 22 files total

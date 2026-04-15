@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260414-102052",
-  "description": "cleanup stale tasks",
+  "branchName": "ralph/task-20260415-104113",
+  "description": "echo cleanup",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "cleanup stale tasks",
+      "description": "echo cleanup",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

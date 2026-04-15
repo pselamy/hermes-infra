@@ -1,38 +1,19 @@
-## Iteration 24 (2026-04-14)
-- Task: Cleanup stale tasks
-- Removed 5 stale dispatches from ~/ralph-state (070056, 072056, 074253, 082109, 100111) + completed.log — 22 files total
-- Deleted 1 stale local branch (ralph/task-20260414-100113)
-- Deleted 4 stale remote branches (052042, 064114, 070058, 100113)
-- No stale worktrees across any repo
-- No stale PRs (hermes-infra: none, pselamy.github.io: #5/#6 active, infrastructure: none, beaconfi: none)
+## Iteration 35 (2026-04-15)
+- Task: Echo cleanup
+- Closed stale PR #29 (mark cf2fee4b as stale/closed — no longer needed)
+- Removed worktree close-cf2fee4b
+- Deleted stale branch ralph/task-20260415-094137 (local + remote)
+- Removed 3 stale dispatches from ~/ralph-state (7cda08b8, 83e32e64, b4fdb3ab) + completed.log — 16 files total
+- Only current dispatch (20260415-104111-b582ec87) remains
+- No stale worktrees, branches, or PRs remain
 - US-001: PASSES
 
-## Iteration 23 (2026-04-14)
-- Task: Show status of task 20260414-070056-68e6a06d
-- Result: Task completed successfully — status=done, 1/1 iterations, 1/1 stories passed
-- PR #12 merged, started 07:00:58Z, finished 07:02:52Z
-- That task performed: status check, removed stale worktree pr10-done, deleted 2 stale dispatches
-- US-001: PASSES
-
-## Iteration 22 (2026-04-14)
-- Task: Status check
-- Server: reeve-agent running (nousresearch/hermes-agent:latest), Up 4 hours, 127.0.0.1:8080->8080/tcp
-- Removed stale worktree pr10-done and branch ralph/task-20260414-064114
-- Removed 2 stale dispatches from ~/ralph-state (20260414-052040, 20260414-064112)
-- Open PRs across repos:
-  - hermes-infra: none
-  - pselamy.github.io: #5 (specs post), #6 (reading-code post)
-  - infrastructure: none
-  - beaconfi: none
-- No stale worktrees remain
-- US-001: PASSES
-
-## Iteration 21 (2026-04-14)
+## Iteration 34 (2026-04-15)
 - Task: Status check and cleanup
-- Server: reeve-agent running (nousresearch/hermes-agent:latest), Up 2 hours, 127.0.0.1:8080->8080/tcp
-- Closed PR #9 (merge conflicts, stale cleanup PR)
-- Removed worktree cleanup-stale and deleted branch ralph/task-20260413-150426
-- Removed 1 stale dispatch (20260413-150424-f78ffb47) from ~/ralph-state
+- Closed stale PR #27 (merge conflicts, cf2fee4b cleanup already done)
+- Removed worktree cancel-cf2fee4b
+- Deleted 5 stale branches (local + remote): ralph/task-20260415-060034, -20260414-102052, -114039, -120142, -134051
+- Removed 2 completed dispatches from ~/ralph-state (4e101438, da3027bd) + completed.log
 - Open PRs across repos:
   - hermes-infra: none
   - pselamy.github.io: #5 (specs post), #6 (reading-code post)
@@ -41,31 +22,31 @@
 - No stale worktrees remain
 - US-001: PASSES
 
-## Iteration 20 (2026-04-13)
-- Task: Status report and cleanup
-- Server: reeve-agent running (nousresearch/hermes-agent:latest), Up 18 hours, 127.0.0.1:8080->8080/tcp
-- Closed stale PRs #7 and #8 (conflicting, superseded)
-- Removed 2 stale worktrees (pr-summary, task-summary) and deleted their branches
-- Cleaned 7 completed/stopped dispatches from ~/ralph-state
-- Open PRs across repos:
-  - hermes-infra: none
-  - pselamy.github.io: #5 (specs post), #6 (reading-code post)
-  - infrastructure: none
-  - beaconfi: none
-- No stale worktrees remain
+## Iteration 33 (2026-04-15)
+- Task: Acknowledge task cf2fee4b resolved by PR #27, mark as done
+- Result: PR #27 ("Mark stale task cf2fee4b as cancelled") is open and addresses cf2fee4b
+- Acknowledged resolution and marked US-001 as passing
 - US-001: PASSES
 
-## Iteration 19 (2026-04-13)
-- Task: Clean up and report status
-- Removed 4 stale dispatches from ~/ralph-state:
-  1. 20260412-214104-25b6095d (done)
-  2. 20260412-234204-5b62733a (stopped)
-  3. 20260413-014121-15ca9ba9 (stopped)
-  4. 20260413-020033-375c8ce3 (stopped)
-- Only current dispatch (20260413-042203-fe6f112a) remains
-- No stale worktrees found across any repo
-- hermes-infra: PR #5 open and mergeable, no other open PRs
-- pselamy.github.io: 2 open PRs (#5, #6) — blog post drafts, not stale
-- infrastructure: no open PRs
-- beaconfi: no open PRs
+## Iteration 32 (2026-04-15)
+- Task: Mark stale task 20260401-130658-cf2fee4b as cancelled
+- Result: Dispatch already cleaned up (confirmed in iterations 25, 27, 29, 31)
+- Cleaned up stale PRs: closed #23, #25, #26
+- Removed 2 stale worktrees (resolve-cf2fee4b, show-pr-status)
+- Deleted 3 stale branches (local + remote): ralph/task-20260414-202046, -210054, -180059
+- Removed 14 stale dispatches from ~/ralph-state + completed.log
+- US-001: PASSES
+
+## Iteration 31 (2026-04-14)
+- Task: Mark dispatch 20260401-130658-cf2fee4b as resolved if still showing unknown
+- Result: Already fully cleaned up — no ralph-state files, no branches, no worktrees, no PRs
+- Previously confirmed clean in iterations 25, 27, and 29
+- Also removed stale worktree cleanup-fef72cf0 and branch ralph/task-20260414-180059 left from iteration 30
+- US-001: PASSES
+
+## Iteration 30 (2026-04-14)
+- Task: Mark stopped dispatch fef72cf0 as cleaned up — no PR produced, close stale entry
+- Removed 4 ralph-state files for 20260414-174038-fef72cf0 (status: stopped, 0 iterations, 0/1 stories)
+- Removed 3 stale worktrees: check-dispatch, task-20260414-160057, task-20260414-164059
+- Deleted 3 stale branches (local + remote): ralph/task-20260414-154054, -160057, -164059
 - US-001: PASSES

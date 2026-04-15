@@ -1,3 +1,9 @@
+## Iteration 25 (2026-04-15)
+- Task: mark-complete --task 20260401-130658-cf2fee4b
+- Task 20260401-130658-cf2fee4b had no state files (previously cleaned up)
+- Added entry to ~/ralph-state/completed.log marking it done
+- US-001: PASSES
+
 ## Iteration 24 (2026-04-14)
 - Task: Cleanup stale tasks
 - Removed 5 stale dispatches from ~/ralph-state (070056, 072056, 074253, 082109, 100111) + completed.log — 22 files total

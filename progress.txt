@@ -1,3 +1,10 @@
+## Iteration 36 (2026-04-16)
+- Task: Mark previous stalled task as done
+- Closed stale PRs #32 and #33 (from previous stalled tasks)
+- Removed 2 stale worktrees (stale-close, status-check) and their branches
+- No further action needed — task is a no-op acknowledgment
+- US-001: PASSES
+
 ## Iteration 35 (2026-04-15)
 - Task: Echo cleanup
 - Closed stale PR #29 (mark cf2fee4b as stale/closed — no longer needed)

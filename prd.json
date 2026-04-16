@@ -1,12 +1,12 @@
 {
   "project": "hermes-infra",
-  "branchName": "ralph/task-20260416-050028",
-  "description": "Mark previous stalled task as done — no further action needed",
+  "branchName": "ralph/task-20260416-104133",
+  "description": "cleanup: mark stale stopped dispatches as resolved",
   "userStories": [
     {
       "id": "US-001",
       "title": "Complete task",
-      "description": "Mark previous stalled task as done — no further action needed",
+      "description": "cleanup: mark stale stopped dispatches as resolved",
       "acceptanceCriteria": [
         "All work described in the prompt is complete"
       ],

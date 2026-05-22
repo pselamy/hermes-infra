@@ -11,5 +11,18 @@ services:
       - .env
     environment:
       - HERMES_CONFIG_PATH=/etc/hermes/hermes.yaml
+      # Per-request LLM timeout: prevents hung OpenRouter calls (incident 2026-05-22).
+      # Default HERMES_API_TIMEOUT is 1800s (30min) which allowed a 7691s hang.
+      - HERMES_API_TIMEOUT=180
+      - HERMES_STREAM_READ_TIMEOUT=120
+      - HERMES_STREAM_STALE_TIMEOUT=120
     ports:
       - "127.0.0.1:8080:8080"
+    mem_limit: 3g
+    memswap_limit: 3g
+    healthcheck:
+      test: ["CMD-SHELL", "kill -0 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s

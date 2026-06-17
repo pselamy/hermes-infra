@@ -1,3 +1,19 @@
+## Iteration 39 (2026-04-16)
+- Task: Cleanup stale stopped dispatches
+- Removed 2 stopped dispatches from ~/ralph-state (072135-a721ae1d, 102107-e19c0284) — 8 files
+- Removed 1 completed dispatch (064128-a72d8189) + completed.log — 6 files
+- Closed stale PR #36 (no-op cleanup, already merged/done)
+- Removed stale worktree (no-op-cleanup) and branch (ralph/task-20260416-064130, local + remote)
+- Only current dispatch (20260416-104131-8727e309) remains
+- US-001: PASSES
+
+## Iteration 38 (2026-04-16)
+- Task: No-op cleanup
+- Removed stale worktree (status-check) and branch (ralph/task-20260416-062050, local + remote)
+- Removed 1 completed dispatch from ~/ralph-state (20260416-062048-97efe465) + completed.log — 6 files
+- No open PRs for hermes-infra
+- US-001: PASSES
+
 ## Iteration 37 (2026-04-16)
 - Task: Status check
 - Docker: not available (not installed)
